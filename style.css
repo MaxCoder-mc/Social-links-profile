@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  /*grid-template-rows: 1fr auto; /* Create two rows: one flexible and one for the footer */
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  background-color: hsl(0, 0%, 12%);
+  width: 327px;
+  height: 579px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*padding: 23px;*/
+  box-sizing: border-box;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-picture{
+  width: 89px;
+  border-radius: 50%;
+  margin-bottom: 27px;
+}
+h2,h5,p{
+  padding: 0;
+  margin: 0;
+}
+.profile-name{
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.profile-place{
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+.about{
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.social-button{
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  font-size: 14px;
+  font-weight: 600;
+  height: 45px;
+  width: 279px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.social-button:hover{
+  color: hsl(0, 0%, 20%);;
+  background-color: hsl(75, 94%, 57%);
+}
+.attribution { 
+  color: hsl(0, 0%, 100%);
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 800px){
+  main{
+    width: 384px;
+    height: 612px;
+    /*padding: 39px 43px;*/
+  }
+  .social-button{
+    width: 304px;
+  }
+}
