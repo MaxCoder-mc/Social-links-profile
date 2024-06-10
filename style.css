@@ -7,21 +7,20 @@ body{
   padding: 0;
   height: 100vh;
   display: flex;
-  /*grid-template-rows: 1fr auto; /* Create two rows: one flexible and one for the footer */
   align-items: center;
   justify-content: center;
 }
 
 main{
   background-color: hsl(0, 0%, 12%);
-  width: 327px;
-  height: 579px;
+  width: 384px;
+  height: 612px;
+  /*padding: 39px 43px;  either width and height or use padding*/
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*padding: 23px;*/
   box-sizing: border-box;
 }
 .profile{
@@ -67,12 +66,13 @@ h2,h5,p{
   font-size: 14px;
   font-weight: 600;
   height: 45px;
-  width: 279px;
+  width: 304px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
 }
-.social-button:hover{
+.social-button:hover,
+.social-button:focus{
   color: hsl(0, 0%, 20%);;
   background-color: hsl(75, 94%, 57%);
 }
@@ -83,13 +83,13 @@ h2,h5,p{
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (min-width: 800px){
+@media (max-width: 800px){
   main{
-    width: 384px;
-    height: 612px;
-    /*padding: 39px 43px;*/
+    width: 327px;
+    height: 579px;
+    /*padding: 23px;*/
   }
   .social-button{
-    width: 304px;
+    width: 279px;
   }
 }
