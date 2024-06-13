@@ -10,12 +10,12 @@ body{
   align-items: center;
   justify-content: center;
 }
-
+  
 main{
   background-color: hsl(0, 0%, 12%);
-  width: 384px;
-  height: 612px;
-  /*padding: 39px 43px;  either width and height or use padding*/
+  width: 24rem;
+  height: 38.25rem;
+  /*padding: 23px; either width and height or use padding*/*/
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -24,72 +24,73 @@ main{
   box-sizing: border-box;
 }
 .profile{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 .profile-picture{
-  width: 89px;
+  width: 5.562rem;
   border-radius: 50%;
-  margin-bottom: 27px;
+  margin-bottom: 1.5rem;
 }
-h2,h5,p{
+h1,p{
   padding: 0;
   margin: 0;
 }
 .profile-name{
   color: hsl(0, 0%, 100%);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0.562rem;
 }
 .profile-place{
   color: hsl(75, 94%, 57%);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 .about{
   color: hsl(0, 0%, 100%);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
 }
-.buttons{
+.links{
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
-.social-button{
+.social-link{
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 20%);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  height: 45px;
-  width: 304px;
+  height: 2.812rem;
+  width: 19rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.875rem;
   border-radius: 8px;
-  border: none;
-  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
-.social-button:hover,
-.social-button:focus{
+.social-link:hover,
+.social-link:focus{
   color: hsl(0, 0%, 20%);;
   background-color: hsl(75, 94%, 57%);
 }
-.attribution { 
+
+@media (max-width: 50rem){
+  main{
+    width: 20.437rem;
+    height: 36.187rem;
+    /* OR padding: 39px 43px;*/
+  }
+  .social-link{
+    width: 17.437rem;
+  }
+}
+
+/*.attribution { 
   color: hsl(0, 0%, 100%);
   font-size: 11px; 
   text-align: center; 
 }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-@media (max-width: 800px){
-  main{
-    width: 327px;
-    height: 579px;
-    /*padding: 23px;*/
-  }
-  .social-button{
-    width: 279px;
-  }
-}
+.attribution a { color: hsl(228, 45%, 44%); }*/
