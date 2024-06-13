@@ -15,7 +15,7 @@ main{
   background-color: hsl(0, 0%, 12%);
   width: 24rem;
   height: 38.25rem;
-  /*padding: 23px; either width and height or use padding*/*/
+  /*padding: 23px; either width and height or use padding*/
   border-radius: 12px;
   display: flex;
   flex-direction: column;
